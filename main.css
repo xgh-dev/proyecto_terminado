@@ -1,0 +1,171 @@
+/*reglas generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+h1, h2,h3, p {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item:hover {
+    background-color: rgba(248, 248, 255, 0.338);
+    border-radius: 10px;
+
+}
+
+
+
+.section.hero.image{
+    width: 100%;
+    height: auto;
+    min-height: 25rem; /* Altura mínima del contenedor */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(imagenes/imagen\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center; /* Centra la imagen en el contenedor */
+    background-size: cover; /* Ajusta la imagen para cubrir completamente elcontenedor*/
+    background-attachment: fixed; /* Ancla la imagen al contenedor */
+    position: relative; /* Establece un contexto de posición */
+            
+}
+    
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Desplazamiento horizontal, desplazamiento vertical, desenfoque, color */
+
+}
+
+h2 {
+    text-align: center;
+}
+
+
+
+img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+
+ 
+.container-fluid {
+    font-weight: bold;
+}
+
+a.nav-link {
+    color: black;
+}
+
+.miclase {
+    background-color: rgba(23, 32, 39, 0.679);
+}
+.claseboton {
+    border: 2px solid black;
+    color: black;
+}
+
+.imagen-producto{
+    width: 100%;
+    height: 300px;
+}
+
+.atributos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px ;
+}
+
+.contenedor-imagen-categorias {
+    width: 100%;
+    height: 300px;
+}
+
+
+.imagen-categorias{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.div-categorias h2 {
+    background-color: grey;
+    padding: 5px;
+}
+
+.atributos {
+    background-color: grey;
+    padding: 10px;
+}
+
+main button {
+    padding: 10px;
+    background-color: rgb(170, 234, 170);
+    font-weight: bold;
+    border-radius: 10px;
+}
+h2,h3 {
+    font-weight: bold;
+}
+
+
+footer {
+    display: grid;
+    
+}
+
+.section-footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.section-footer ul {
+    list-style: none;
+}
+
+@media screen and (max-width: 800px) {
+    .section-footer {
+        /*definir el grid*/
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .div.categorias {
+        text-align: center;
+    }
+    .div.categorias img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+.section-derechos {
+    padding: 20px;
+    text-align: center;
+}
+
+.div-categorias {
+    border: 2px solid rgb(114, 139, 192);
+}

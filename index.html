@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Propuesta</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='scss/custom.scss'>
+    
+    <script src='main.js'></script>
+</head>
+<style>
+  @media (min-width: 576px) {
+    .pr-sm-0 {
+      padding-right: 0 !important;
+    }
+    .pr-lg-0 {
+      padding-right: 0 !important;  
+    }
+    .pl-sm-0 {
+      padding-left: 0 !important;
+    }
+    .pl-lg-0 {
+      padding-left: 0 !important;  
+    }
+  }
+</style>
+<body>
+    <header class="header">
+        <h1>Geek Store</h1>
+    </header>
+    <!--bg-body-tertiary-->
+    <nav class="navbar navbar-expand-lg miclase">
+        <div class="container-fluid">
+              <a class="navbar-brand" href="#">Logo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                  </li>
+                  <!--apartir de aqui inicia el dropdown-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contacto</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Celular</a></li>
+                      <li><a class="dropdown-item" href="#">Correo</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success claseboton" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="section hero image">
+        <div class="hero-text">
+            <h1 style="font-size:50px;color:white;">Bienvenidos Gamers</h1>
+        </div>
+    </section>
+
+    <main class="p-3 px-xs-3 px-sm-5 px-lg-5">
+        <h2 class="text cemter my-4">Productos</h2>
+        <!--section 1-->
+        <section class="my-4"><!--con my- asignamos margin en el eje y -->
+            <!--article 1-->
+            <article class="row">
+                <div class="col-12 col-xs-12 col-sm-6 col-lg-6 pr-sm-0 .pr-lg-0">
+                    <img class="imagen-producto " src="imagenes/imagen 2.jpg" alt="">
+                </div>
+                <div class="col-12 col-xs-12 col-sm-6 col-lg-6 pl-sm-0 pl-lg-0">
+                    <div class="atributos" style="height: 100%; background-color: grey;" >
+                        <h3>Producto 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto suscipit rerum commodi ipsa, ratione maxime consequuntur repellat consectetur voluptatem dolorem id voluptatum veniam nulla ex fugiat velit inventore. Distinctio, id.</p>
+                        <span>Precio</span>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--section 2-->
+        <section class="row">
+            <!-- Article 1 -->
+            <article class="col-12 col-xs-12 col-sm-6 col-lg-6 my-3">
+              <img src="imagenes/imagen 3.jpg" class="img-fluid imagen-producto" alt="Imagen 1" >
+              <div class="atributos">
+                <h3>Producto 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi qui eos dolorem fuga, commodi eligendi quis aliquid ea beatae iusto fugiat consectetur, velit, nisi modi voluptates error? Vel, omnis obcaecati!</p>
+                <span>Precio</span>
+                <button>Agregar al carrito</button>
+              </div>
+            </article>
+            
+            <!-- Article 2 -->
+            <article class="col-12 col-xs-12 col-sm-6 col-lg-6 my-3">
+              <img src="imagenes/imagen 4.jpg" class="img-fluid imagen-producto" alt="Imagen 2" >
+              <div class="atributos">
+                <h3>Producto 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi qui eos dolorem fuga, commodi eligendi quis aliquid ea beatae iusto fugiat consectetur, velit, nisi modi voluptates error? Vel, omnis obcaecati!</p>
+                <span>Precio</span>
+                <button>Agregar al carrito</button>
+              </div>
+            </article>
+        </section>
+
+        <!--section 3-->
+        <section class="row">
+            <!-- Article 1 -->
+            <article class="col-12 col-xs-12 col-sm-4 col-lg-4 my-3">
+              <img src="imagenes/imagen 5.jpg" class="img-fluid imagen-producto" alt="Imagen 1" >
+              <div class="atributos">
+                <h3>Producto 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi qui eos dolorem fuga, commodi eligendi quis aliquid ea beatae iusto fugiat consectetur, velit, nisi modi voluptates error? Vel, omnis obcaecati!</p>
+                <span>Precio</span>
+                <button>Agregar al carrito</button>
+              </div>
+            </article>
+            
+            <!-- Article 2 -->
+            <article class="col-12 col-xs-12 col-sm-4 col-lg-4 my-3">
+              <img src="imagenes/imagen 6.jpg" class="img-fluid imagen-producto" alt="Imagen 2" >
+              <div class="atributos">
+                <h3>Producto 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi qui eos dolorem fuga, commodi eligendi quis aliquid ea beatae iusto fugiat consectetur, velit, nisi modi voluptates error? Vel, omnis obcaecati!</p>
+                <span>Precio</span>
+                <button>Agregar al carrito</button>
+              </div>
+            </article>
+            <!-- Article 3 -->
+            <article class="col-12 col-xs-12 col-sm-4 col-lg-4 my-3">
+                <img src="imagenes/imagen 7.jpg" class="img-fluid imagen-producto" alt="Imagen 2" >
+                <div class="atributos">
+                  <h3>Producto 6</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi qui eos dolorem fuga, commodi eligendi quis aliquid ea beatae iusto fugiat consectetur, velit, nisi modi voluptates error? Vel, omnis obcaecati!</p>
+                  <span>Precio</span>
+                  <button>Agregar al carrito</button>
+                </div>
+              </article>
+        </section>
+
+        <h2>Categorías</h2>
+        <!--secton-categorias-->
+        <section class="row">
+            <!--articulo-categorias-1-->
+            <article class="col-12 col-xs-12 col-sm-4 col-lg-4 my-1">
+                <div class="div-categorias rounded">
+                    <div class="contenedor-imagen-categorias"><img src="imagenes/imagen 8.jpg" alt="" class="imagen-categorias "></div>                    
+                    <h2>Xbox</h2>
+                </div>
+            </article>
+            <!--articulo-categorias-2-->
+            <article class="col-12 col-xs-12 col-sm-4 col-lg-4 my-1">
+                <div class="div-categorias rounded">
+                    <div class="contenedor-imagen-categorias"><img src="imagenes/imagen 9.jpg" alt="" class="imagen-categorias"></div>                    
+                    <h2>Play Station</h2>
+                </div>
+            </article>
+            <!--articulo-categorias-3-->
+            <article class="col-12 col-xs-12 col-sm-4 col-lg-4 my-1">
+                <div class="div-categorias rounded">
+                    <div class="contenedor-imagen-categorias"><img src="imagenes/imagen 10.jpg" alt="" class="imagen-categorias"></div>
+                    <h2>Nintendo</h2>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+      <section class="section-footer" style="background-color: rgb(74, 72, 72); color: white;">
+          <article class="article footer">
+              <h3>Categorías</h3>
+              <nav>
+                  <ul>
+                      <li>Cocina</li>
+                      <li>Oficina</li>
+                      <li>Jardin</li>
+                      <li>Cochera</li>
+                      <li>Dormitorios</li>
+                  </ul>
+              </nav>
+          </article>
+          <article class="article footer">
+              <h3>Nosotros</h3>
+              <nav>
+                  <ul>
+                      <li>Nuestra Historia</li>
+                      <li>Misión y Visión</li>
+                      <li>Carreras</li>
+                      <li>Pólitica de privacidad</li>
+                      <li>Términos y condiciones</li>
+                  </ul>
+              </nav>
+          </article>
+          <article class="article footer">
+              <h3>Soporte</h3>
+              <nav>
+                  <ul>
+                      <li>Preguntas frecuentes</li>
+                      <li>Ayuda</li>
+                      <li>Confianza y seguridad</li>
+                  </ul>
+              </nav>
+          </article>
+      </section>
+      <section class="section-derechos" style="background-color: rgba(45, 43, 43, 0.994); color: white;">
+          <p>Derechos reservados</p>
+      </section>
+  </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
